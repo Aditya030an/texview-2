@@ -58,13 +58,22 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} TaxView. All rights reserved.
         </p>
 
-        {/* Privacy Policy Link */}
-        <Link
-          to="/Privacy-Policy" // Route to your PrivacyPolicy page
-          className="text-sm text-blue-600 hover:underline"
-        >
-          Privacy Policy
-        </Link>
+        <div className="flex items-center gap-7 ">
+          {/* Privacy Policy Link */}
+          <Link
+            to="/Privacy-Policy" // Route to your PrivacyPolicy page
+            className="text-sm text-blue-600 hover:underline"
+          >
+            Privacy Policy
+          </Link>
+
+          <Link
+            to="/Terms-Conditions" // Route to your PrivacyPolicy page
+            className="text-sm text-blue-600 hover:underline"
+          >
+            Terms & Conditions
+          </Link>
+        </div>
 
         {/* Social Icons */}
         <div className="flex gap-4 text-green-700 text-lg">
